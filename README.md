@@ -13,5 +13,5 @@ It is really powerful plugin mechanism but it requires a little bit of practice 
 4. Generate plugin .jar file with maven.
 5. Deploy the new plugin .jar file into Pulse application folders
 
-This repository helps onboarding users to quickly learn how to implement Pulse visualization with examples and existing visualizations published on the [Genesys Dashboard Community Center](http://community.demo.genesys.com/pulse/visualizations/).
+This repository helps onboarding users to quickly learn how to implement Pulse visualization with examples and existing visualizations published on the [Genesys Dashboard Community Center](http://community.demo.genesys.com/pulse/visualizations).
 
