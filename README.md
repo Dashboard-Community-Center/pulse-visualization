@@ -9,7 +9,8 @@ It is really powerful plugin mechanism but it requires a little bit of practice 
 It is not easy to debug your application because you don't have the code source in the dev console, mainly for optimization purpose, so I suggest to write the plugin step by step to minimize errors and log as much information as possible into the dev console (don't forget to remove them once deployed in production).
  
 High Level Summary
-STEP 1 - Create your own plugin with the utility script provided in your Pulse package - plugin-generator.js 
+
+STEP 1 - Create your own plugin with the utility script provided in your Pulse package - plugin-generator.js
 STEP 2 - Implement the new visualization with your own front-end library. In our case, we are using an existing library - Highcharts Treemap (https://www.highcharts.com/demo/heatmap) but it is open to any library.
 STEP 3 - Update the pulse.manifest.js file to render the customized visualization
 STEP 4 - Generate plugin .jar file with maven.
