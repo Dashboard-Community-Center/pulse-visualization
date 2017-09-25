@@ -1,5 +1,5 @@
 # pulse-visualization
-This repository contains Pulse visualizations to share on the Dashboard Community Center
+This repository contains Pulse visualizations to share on the [Genesys Dashboard Community Center] (http://community.demo.genesys.com)
 
 I am often asked by Genesys customers if they can add their own visualization into Pulse and so far we were limited to expose external visualization into a Pulse iframe widget. Usually, the user experience is not great and requires the customer to host its own application on different servers.
 
