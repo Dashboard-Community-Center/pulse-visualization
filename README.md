@@ -3,6 +3,8 @@ This repository contains Pulse visualizations to share on the [Genesys Dashboard
 
 I am often asked by Genesys customers if they can add their own visualization into Pulse and so far we were limited to expose external visualization into a Pulse iframe widget. Usually, the user experience is not great and requires the customer to host its own application on different servers.
 
+Today, Pulse team came up with a powerful plugin mechanism to extend the native library of widget type and can be really handy for many use cases.
+
 It is really powerful plugin mechanism but it requires a little bit of practice to get used to it so I will try to describe it as best as I can.
  
 ## High Level Summary
