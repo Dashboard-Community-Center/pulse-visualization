@@ -1,0 +1,142 @@
+.dense-status ul {
+    list-style: none;
+}
+
+.dense-status ul#content-dense-status li {
+    float: left;
+}
+
+.dense-status li {
+    padding-left: 15px;
+    /*adjust to your needs*/
+    padding-right: 5px;
+    /*adjust to your needs*/
+}
+
+.dense-status li a {
+    padding-left: 25px;
+    /*adjust to your needs*/
+    display: block;
+}
+
+
+/* Tooltip container */
+
+.dense-status.tooltip {
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    border-style: none;
+}
+
+
+/* Tooltip text */
+
+.dense-status.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 20%;
+    margin-left: -10px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+    overflow: visible;
+}
+
+
+/* Tooltip arrow */
+
+.dense-status.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.dense-status.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dense-status .dropdown {
+    margin-left: 35px;
+}
+
+.dense-status .red-color {
+    color: red;
+}
+
+.dense-status .orange-color {
+    color: orange;
+}
+
+.dense-status .green-color {
+    color: green;
+}
+
+.dense-status .grey-color {
+    color: grey;
+}
+
+.dense-status .filter-status-toggle {
+	margin-top:20px;
+    padding-left: 8px;
+    display: inline-block;
+}
+
+.dense-status .sort-status-selector {
+    margin-top:20px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.dense-status .sort-status-selector span {
+    margin-right: 5px;
+}
+
+.dense-status .display-status-selector span {
+    margin-right: 5px;
+}
+
+.dense-status .display-status-selector {
+    margin-top:20px;
+    display: inline-block;
+}
+
+.dense-status .content-status {
+    overflow: visible;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: -30px;
+    height: inherit;
+}
+
+.dense-status .dense-status-container
+{
+    height: inherit;
+    overflow: visible;
+}
+
+
+.dense-status .active {
+    color: green;
+}   
