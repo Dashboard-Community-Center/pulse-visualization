@@ -12,10 +12,10 @@
             return;
         }
 
-        console.log('data: '); 
+        /*console.log('data: '); 
         console.log (data);
         console.log('options: '); 
-        console.log (options);
+        console.log (options);*/
 
         // Show the selected objects by the Pulse user with this widget
         var displayObjects = data.objects
@@ -40,12 +40,12 @@
         var xObjectScale = displayObjects.map((object) => object.label);
         var yStatScale = displayStats.map((stat) => stat.label);
 
-        console.log(xObjectScale);
-        console.log(yStatScale);
+        //console.log(xObjectScale);
+        //console.log(yStatScale);
 
         //Show generated data to be displayed in the chart based on snapshot data
-        console.log('displayed data');
-        console.log(displayData);
+        //console.log('displayed data');
+        //console.log(displayData);
 
     	Highcharts.chart(element, {
 
