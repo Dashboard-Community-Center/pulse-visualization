@@ -150,22 +150,29 @@
     }
 
     pulse.extension({
-        type: 'WIDGET',
-        apiVersion: '8.5.1',
-        id: 'CustomWidgetBubble',
-        label: 'Bubble',
-        icon: 'icon-filter',
-        require: [
+        type: 'WIDGET',						// type of extension allows us to add more extension types in the feature
+        apiVersion: '8.5.1',				// version of api used in the extension
+        id: 'CustomWidgetBubble',			// unique extension id, should not clash with other deployed extensions
+        label: 'Bubble',					// label displayed in Display Options of the Widget Wizard
+        icon: 'icon-status-call-dialing',	// icon displayed in Display Options of the Widget Wizard, pick from  http://ark.genesys.com/#/iconography
+        require: [							// javascript or css files to be loaded for the extension work
+											// use object when your library exposes global variable
+											// no need to load d3 (version 3.5.17), jQuery, underscore - they are already loaded by Pulse
+											// to avoid loading library from CDN put library side by side with pulse.manifest.js and provide URL like "../pulse-plugin-name/library.js"
             { Highcharts: "https://code.highcharts.com/highcharts.js" },
             "https://code.highcharts.com/highcharts-more.js"
         ],
-        render: function(element, data, options) {
+		// key function for rendering widget content
+        render: function(element, data, options) { 
             return drawBubble(element, data, options);
         },
+		// function to be called when widget being resized
         resize: function(element, data, options) {
             drawBubble(element, data, options);
         },
         constraints: {
+			dashboardSupport: true, // allows to select widget on dashboard, enabled by default
+			wallboardSupport: true, // allows to select widget on wallboard, disabled by default
             size: {
                 minX: 2,
                 minY: 2,
@@ -173,7 +180,7 @@
                 maxY: 4
             },
             objects: {
-                min: 5,
+                min: 4,
                 max: 100
             },
             statistics: {
