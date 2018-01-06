@@ -184,7 +184,7 @@
                 max: 100
             },
             statistics: {
-                min: 1,
+                min: 3,
                 max: 3
             }
         }
