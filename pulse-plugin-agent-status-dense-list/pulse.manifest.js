@@ -329,7 +329,8 @@
             statistics: {
                 min: 1,
                 max: 4
-            }
+            },
+			groupByObjectsSupport: true
         }
     });
 
